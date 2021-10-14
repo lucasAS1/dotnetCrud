@@ -1,8 +1,11 @@
+    @{
+        ViewData["Title"] = "Cadastro";
+    }
     <!--Conteudo da página-->
     <div class="container-fluid corpo ">
         <div class="row d-flex justify-content-center ">
             <div class="col-10 m-5">
-                <div class="card bg-dark">
+                <div class="card ">
                     <div class="card-header">
                         <p class="lead">Formulário de cadastro</p>
                     </div>
@@ -11,44 +14,26 @@
                             <input type="hidden" id="hdnId">
                             <div class="row d-flex justify-content-center">
                                 <div class="col-4">
-                                    <label for="txtNome">Nome:</label>
-                                    <input class="form-control" type="text" id="txtNome" placeholder="Digite o nome">
+                                    <label for="txtAutor">Autor:</label>
+                                    <input class="form-control" type="text" id="txtAutor" placeholder="Digite o Autor">
                                 </div>
                                 <div class="col-4">
-                                    <label for="txtCPF">CPF:</label>
+                                    <label for="txtTitulo">Titulo:</label>
                                     <input 
                                     class="form-control"
                                     type="text"
-                                    id="txtCPF"
-                                    placeholder="Digite o CPF">
-                                </div>
-                                <div class="col-4">
-                                    <label for="txtTelefone">Telefone:</label>
-                                    <input 
-                                    class="form-control" 
-                                    type="text" 
-                                    id="txtTelefone" 
-                                    placeholder="Digite o telefone">
+                                    id="txtTitulo"
+                                    placeholder="Digite o Titulo">
                                 </div>
                             </div>
                             <div class="row d-flex justify-content-center pt-5">
-                                <div class="col-4">
-                                    <label for="txtEmail">Email:</label>
-                                    <input 
+                                <div class="col-10">
+                                    <label for="txtText">Texto:</label>
+                                    <textarea 
                                     class="form-control" 
                                     type="text" 
-                                    id="txtEmail" 
-                                    placeholder="Digite o email">
-                                </div>
-                                <div class="col-4">
-                                    <label for="slcDepart">Departamento:</label>
-                                    <select class="form-control" id="slcDepart">
-                                        <option selected value="N/A">Escolha</option>
-                                        <option value="1">TI</option>
-                                        <option value="2">RH</option>
-                                        <option value="3">Limpeza</option>
-                                        <option value="4">Operacional</option>
-                                    </select>
+                                    id="txtText" 
+                                    placeholder="Digite o email"></textarea>
                                 </div>
                             </div>
                             <div class="row pt-4 d-flex justify-content-center">
